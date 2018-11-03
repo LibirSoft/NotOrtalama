@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#ffff">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:text="Ders:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_weight="1"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:layout_marginEnd="5dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/lesson"
+            android:layout_weight="1"
+            android:hint="Örnek: Matematik"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_red_dark"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_marginEnd="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:text="Haftalık Ders Saati:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textAlignment="textStart"
+            android:layout_marginEnd="5dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:id="@+id/lesson_hours"
+            android:layout_weight="1"
+            android:hint="Örnek:3"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_red_dark"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_marginEnd="5dp"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:text="Ders Ortalaman:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:layout_weight="1"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textAlignment="textStart"
+            android:layout_marginEnd="5dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/lesson_avarage"
+            android:layout_weight="1"
+            android:hint="Örnek:75,77"
+            android:textAlignment="center"
+            android:textColor="@android:color/holo_red_dark"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_marginEnd="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="Vazgeç"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancel"
+            android:layout_weight="1"
+            android:background="@drawable/cancel_selector"
+            android:textColorHint="#80fdc6bd"
+            android:textColor="#fcdbdb"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp" />
+
+        <Button
+            android:text="Tamam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/accept"
+            android:layout_weight="1"
+            android:background="@drawable/accept_selector"
+            android:textColor="#b7dde4"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+</LinearLayout>
